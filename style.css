@@ -78,7 +78,8 @@ body{
 .box form{
     position: absolute;
     inset: 4px;
-    background: rgb(32, 41, 71);
+    background: rgb(24, 24, 24);
+    backdrop-filter: blur(20px);
     padding: 50px 40px;
     border-radius: 8px;
     z-index: 2;
