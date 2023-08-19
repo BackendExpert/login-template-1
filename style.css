@@ -48,6 +48,23 @@ body{
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
 }
+.lineBorder{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+.lineBorder::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770 );
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
 
 @keyframes animate{
     0%{
