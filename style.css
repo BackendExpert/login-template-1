@@ -44,9 +44,10 @@ body{
     width: 380px;
     height: 420px;
     background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff );
-    z-index: 1;
+    z-index: -1;
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
+    animation-delay: -6s;
 }
 .lineBorder{
     position: absolute;
@@ -64,6 +65,7 @@ body{
     z-index: 1;
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
+    animation-delay: -3s;
 }
 
 @keyframes animate{
@@ -78,7 +80,7 @@ body{
 .box form{
     position: absolute;
     inset: 4px;
-    background: rgb(24, 24, 24);
+    background: rgb(117, 117, 117);
     backdrop-filter: blur(20px);
     padding: 50px 40px;
     border-radius: 8px;
