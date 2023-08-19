@@ -111,4 +111,15 @@ body{
     border: none;
     outline: none;
     padding: 9px 25px;
+    background: white;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.box form input[type="submit"]:hover{
+    opacity: 0.6;
 }
