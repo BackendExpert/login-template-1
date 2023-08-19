@@ -90,6 +90,25 @@ body{
 .box form .inputBox input:valid ~ i,
 .box form .inputBox input:focus ~ i{
     height: 44px;
+}
+.box form .form-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box form .form-links a{
+    margin: 10px 0;
     font-size: 0.75em;
-    transform: translateY(-34px);
+    color: rgb(172, 172, 172);
+    text-decoration: none;
+}
+.box form .form-links :hover,
+.box form .form-links a:nth-child(2){
+    color: white;
+}
+
+.box form input[type="submit"]{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
 }
