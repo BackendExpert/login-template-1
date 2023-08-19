@@ -11,7 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('https://wallpapercave.com/dwp1x/wp11973443.jpg') no-repeat;
+    background: url('https://wallpapercave.com/dwp1x/wp9975615.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -20,7 +20,44 @@ body{
     width: 380px;
     height: 420px;
     border-radius: 8px;
+    overflow: hidden;
 }
+
+.box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff );
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff );
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 .box form{
     position: absolute;
     inset: 4px;
